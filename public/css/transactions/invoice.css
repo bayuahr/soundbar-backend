@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+#invoice_card {
+    font-family: 'Roboto Mono', monospace;
+    max-width: 382px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+#invoice_card p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.btn-print-invoice-container {
+    max-width: 382px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dashed-line {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.invoice-table {
+    font-size: 14px!important;
+}
+
+.invoice-table th, .invoice-table td {
+    padding: 8px;
+}
+
+@media print {
+    .printable-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #invoice_card {
+        margin-right: 0;
+        margin-left: 0;
+        box-shadow: none;
+    }
+    
+    .non-printable {
+        display: none !important;
+        margin: 0;  
+        size: auto;
+    }
+
+    @page {
+        margin: 0;
+    }
+}

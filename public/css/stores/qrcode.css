@@ -1,0 +1,82 @@
+#qrcode_card {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+.btn-print-container {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background-container {
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.content-background {
+    background: #F89500;
+    width: 100%;
+    height: 6rem;
+}
+
+.rounded-background {
+    background: #F89500;
+    height: 150px;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+}
+
+.qrcode-card-title-container {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.qrcode-card-title {
+    font-size: 12rem;
+}
+
+.qrcode-loading {
+    width: 144px;
+    height: 144px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.qrcode-card-footer {
+    margin-top: 7rem;
+}
+
+@media print {
+    .printable-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #qrcode_card {
+        margin-right: 0;
+        margin-left: 0;
+        box-shadow: none;
+        border: solid 1px gray;
+    }
+    
+    .non-printable {
+        display: none !important;
+        margin: 0;  
+        size: auto;
+    }
+
+    .content-background, .rounded-background {
+        background: #F89500;
+        print-color-adjust: exact; 
+    }
+
+    @page {
+        margin: 0;
+    }
+}

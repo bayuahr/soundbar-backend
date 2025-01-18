@@ -1,0 +1,49 @@
+.input-password-container {
+    position: relative;
+}
+
+.input-password-container input[type=password] {
+    padding-right: 2.75rem;
+}
+
+.input-password-container .toggle-show-password {
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    height: 1.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.input-password-container .toggle-show-password:hover {
+    opacity: 1;
+}
+
+select[readonly]
+{
+    pointer-events: none;
+    background-color: #e9ecef;
+}
+
+.select2-container--bootstrap-5.select2-container--focus .select2-selection, .select2-container--bootstrap-5.select2-container--open .select2-selection {
+    border-color: var(--bs-primary-tint-40);
+    background-color: #fff;
+    box-shadow: 0 0 0 0, 0 0.125rem 0.25rem 0 rgba(58,87,232,.15);
+    color: #8a92a6;
+    outline: 0;
+}
+
+.note-modal-footer {
+    height: 50px;
+}
+
+.note-modal-content {
+    box-shadow: 0 0 0 0, 0 0.125rem 0.25rem 0 rgba(58,87,232,.15);
+    outline: 0;
+}
+
+.select2-container--bootstrap-5 .select2-dropdown {
+    z-index: 1080;
+}
